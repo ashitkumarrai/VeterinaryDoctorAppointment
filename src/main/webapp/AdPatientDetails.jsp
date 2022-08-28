@@ -30,18 +30,18 @@
 		}
 
 
- .roundbox 	{
-     	display: inline-block;
-     	height: 40px;
-     	background-color: #9C9E9E;
-     	width: 180px;
-     	text-align: center;
-     	line-height: 40px;
-     	border-radius:30px;
-     	cursor: pointer;
-     	text-decoration: none;
-    color:yellow;
-    }
+		.roundbox 	{
+			display: inline-block;
+			height: 40px;
+			background-color: rgb(50, 108, 195);
+			width: 180px;
+			text-align: center;
+			line-height: 40px;
+			border-radius:30px;
+			cursor: pointer;
+			text-decoration: none;
+		color:white;
+		}
   .welcome	{
    		display: inline-block;
    		float: right;

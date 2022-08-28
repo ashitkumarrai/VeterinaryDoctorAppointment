@@ -119,7 +119,7 @@
 		
 		<tr><td>Age:</td><td><input type="number" name="age" min="1" max="100" required></td> </tr>
 		
-		<tr><td>Date</td><td><input type="date" name="day" max="2018-12-31" min="2018-01-02" required></td></tr>
+		<tr><td>Date</td><td><input type="date" name="day" min="2022-01-02" required></td></tr>
 		
 		<tr><td>Specialty:</td><td><select name="specialty">
 		<option disabled="disabled">Select</option>
@@ -135,7 +135,7 @@
     	<option value="PlasticSurgery">Plastic Surgery</option>
     	<option value="Rheumatology">Rheumatology</option><option value="Other">Other</option></select></td></tr>
 		<tr><td>Description</td><td><textarea name="description" placeholder="Enter pet Health Status.." required="required"></textarea></td></tr>
-		<tr><td>Doctor ID:</td><td><input type="number" name="docid" placeholder="xxx" required></td></tr>
+		<tr><td>Doctor ID:</td><td><input type="number" name="docid" placeholder="xxx" required="required"></td></tr>
 			
 		<tr><td><td><input type="submit" value="Submit"></td></tr>
 	</table>

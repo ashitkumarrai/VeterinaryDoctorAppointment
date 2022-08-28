@@ -45,7 +45,7 @@ public class AppointmentReg extends HttpServlet {
 			ab.setDay(day);
 			ab.setSpecialty(specialty);
 			ab.setDescription(description);
-			ab.setId(id);
+			ab.setDocId(id);
 			
 		    int status=AppointmentDao.save(ab);  
 		        if(status>0){  

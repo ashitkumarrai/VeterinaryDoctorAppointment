@@ -13,7 +13,7 @@ public class AppointmentDao {
 	        int status=0;  
 	        try{  
 	            Connection con=ConnectionProvider.getConnection();   
-	            java.sql.PreparedStatement ps=con.prepareStatement("insert into appointment(name,email,contact,age,day,speciality,description,id) values(?,?,?,?,?,?,?,?)");  
+	            java.sql.PreparedStatement ps=con.prepareStatement("insert into appointment(name,email,contact,age,day,specialty,description,docId) values(?,?,?,?,?,?,?,?)");  
 	            
 	            ps.setString(1,ab.getName()); 
 	            ps.setString(2,ab.getEmail());
@@ -22,7 +22,7 @@ public class AppointmentDao {
 	            ps.setString(5, ab.getDay());
 	            ps.setString(6,ab.getSpecialty());  
 	            ps.setString(7,ab.getDescription());
-	            ps.setInt(8, ab.getId());
+	            ps.setInt(8, ab.getDocId());
 	            
 	            status=ps.executeUpdate();  
 	              
@@ -50,7 +50,8 @@ public class AppointmentDao {
 	                app.setDay(rs.getString(6));
 	                app.setSpecialty(rs.getString(7));
 	                app.setDescription(rs.getString(8));
-	                app.setId(rs.getInt(9));
+	                app.setDocId(rs.getInt(9));
+	             
 
 	 			list.add(app);
 	 		}
@@ -80,7 +81,7 @@ public class AppointmentDao {
 	                app.setDay(rs.getString(6));
 	                app.setSpecialty(rs.getString(7));
 	                app.setDescription(rs.getString(8));
-	                app.setId(rs.getInt(9));
+	                app.setDocId(rs.getInt(9));
 
 	 			list.add(app);
 	 		}

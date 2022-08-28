@@ -57,9 +57,9 @@
 	<div class="reg">
 	<table bgcolor="#f2f2f2" cellspacing="15px">
 		<tr><td></td></tr>
-		<tr><td>Pet Name:</td><td><input  type="text" name="name" placeholder="Pet Name" required="required"></td></tr>
+		<tr><td>Name:</td><td><input  type="text" name="name" placeholder="pet name.." required="required"></td></tr>
 		
-		<tr><td>Age:</td><td><input type="integer" name="age" required="required"></td></tr>
+		<tr><td>Age:</td><td><input type="text" name="age" required="required"></td></tr>
 		
 		<tr><td>Animal Species: </td><td><textarea rows="4" cols="40" name="animalSpecies" required="required"></textarea></td></tr>
 		

@@ -10,6 +10,13 @@ public class AppointmentBean {
 	private String day;
 	private String description;
 	private String email;
+	private int docId;
+	public int getDocId() {
+		return docId;
+	}
+	public void setDocId(int docId) {
+		this.docId = docId;
+	}
 	public int getApid() {
 		return apid;
 	}

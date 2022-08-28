@@ -92,6 +92,7 @@
 		<table border="1px solid black">
 			<tr>
 				<th>Patient Name</th>
+				<th> Doctor Id</th>
 				<th>Email</th>
 				<th>Contact</th>
 	       		<th>Age</th>
@@ -103,6 +104,7 @@
 			<%for(AppointmentBean app:list)	{ %>
 			<tr>
 			<td><%=app.getName()%></td>
+			<td><%=app.getDocId() %></td>
 			<td><%=app.getEmail() %></td>
 			<td><%=app.getContact() %></td>
 			<td><%=app.getAge() %></td>
