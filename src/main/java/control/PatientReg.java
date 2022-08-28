@@ -39,19 +39,19 @@ public class PatientReg extends HttpServlet {
 	       out.print("<body>");
 	       
 			String name =request.getParameter("name");
-			String dob=request.getParameter("dob");
-			String address=request.getParameter("address");
-			String gender=request.getParameter("gender");
+			String age=request.getParameter("age");
+			String animalSpecies=request.getParameter("animalSpecies");
+			String ownerName=request.getParameter("ownerName");
 			String contact =request.getParameter("contact");
 			String email =request.getParameter("email");
 			String password =request.getParameter("password");
 			
 			PatientBean pb=new PatientBean();
 			pb.setName(name);
-			pb.setDob(dob);
-			pb.setAddress(address);
-			pb.setGender(gender);
-			pb.setContact(contact);
+			pb.setAge(age);
+			pb.setAnimalSpecies(animalSpecies);
+			pb.setOwnerContactNum(contact);
+			pb.setOwnerName(ownerName);
 			pb.setEmail(email);
 			pb.setPassword(password);
 			
@@ -86,17 +86,20 @@ public class PatientReg extends HttpServlet {
 	       out.print("<body>");
 	       
 			String name =request.getParameter("name");
-			String address=request.getParameter("address");
-			String contact =request.getParameter("contact");
-			String email =request.getParameter("email");
-			String password =request.getParameter("password");
+			String age=request.getParameter("age");
+			String animalSpecies =request.getParameter("animalSpecies");
+			String ownerName =request.getParameter("ownerName");
+			String ownerContactNum =request.getParameter("ownerContactNum");
+			
+			String email = request.getParameter("email");
 			
 			PatientBean up=new PatientBean();
 			up.setName(name);
-			up.setAddress(address);
-			up.setContact(contact);
+			up.setAge(age);
+			up.setOwnerContactNum(ownerContactNum);
+			up.setAnimalSpecies(animalSpecies);
+			up.setOwnerName(ownerName);
 			up.setEmail(email);
-			up.setPassword(password);
 			
 			  int status=PatientDao.update(up);  
 		        if(status>0){  

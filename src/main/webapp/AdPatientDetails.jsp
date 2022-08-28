@@ -62,7 +62,6 @@
 		<a href="AdminHome.jsp"><li class="roundbox">Doctor's Details</li></a>
 		<a href="AddDoctor.jsp"><li class="roundbox">Add Doctor</li></a>
 		<a href="AdPatientDetails.jsp"><li class="roundbox">Patient Details</li></a>
-		<a href="FeedbackView.jsp"><li class="roundbox">Feedback View</li></a>
 		<a href="Logout"><li class="roundbox">Logout</li></a>
 		<li class="welcome"><marquee>
 		<% 
@@ -92,21 +91,21 @@
 			<table border="1px solid black">
 				<tr>
 				<th>Id</th>
-				<th>Name</th>
-				<th>Dob</th>
-				<th>Address</th>
-				<th>Gender</th>			
-				<th>Contact</th>
+				<th>Pet Name</th>
+				<th>Age</th>
+				<th>Animal Species</th>
+				<th>Onwer Name</th>			
+				<th>Owner Contact</th>
 				<th>Email</th>	
 				</tr>
 				<c:forEach items="${list}" var="p">  
 				<tr>
 				<td>${p.getId()}</td>
 				<td>${p.getName()}</td>
-				<td>${p.getDob()}</td>
-				<td>${p.getAddress()}</td>
-				<td>${p.getGender()}</td>
-				<td>${p.getContact()}</td>
+				<td>${p.getAge()}</td>
+				<td>${p.getAnimalSpecies()}</td>
+				<td>${p.getOwnerName()}</td>
+				<td>${p.getOwnerContactNum()}</td>
 				<td>${p.getEmail()}</td>
 				  
 				</tr>

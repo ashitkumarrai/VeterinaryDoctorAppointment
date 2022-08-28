@@ -27,7 +27,7 @@
   		   		font-size:20px ;
   		   }
   		.container tr	{
-  			background-color: rgb(50, 108, 195);
+  			background-color: whitesmoke;
   			}
        .roundbox 	{
        	display: inline-block;
@@ -66,7 +66,7 @@
 	<br>
 	<div class="container">
 	<ul>
-		<a href="AdminHome.jsp">Admin Home </li></a>
+		<a href="AdminHome.jsp"><li class="roundbox">Admin Home </li></a>
 		<a href="AddDoctor.jsp"><li class="roundbox">Add Doctor</li></a>
 		<a href="AdPatientDetails.jsp"><li class="roundbox">Patient Details</li></a>
 		

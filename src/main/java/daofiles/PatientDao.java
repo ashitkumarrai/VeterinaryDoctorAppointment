@@ -33,13 +33,13 @@ public class PatientDao {
 		int status=0;
 		try	{
 			Connection conn=ConnectionProvider.getConnection();
-			PreparedStatement ps=conn.prepareStatement("insert into Patients(name,dob,address,gender,contact,email,password) values(?,?,?,?,?,?,?)");
+			PreparedStatement ps=conn.prepareStatement("insert into Patients(name,age,animalSpecies,ownerName,ownerContactNum,email,password) values(?,?,?,?,?,?,?)");
 		
 	        ps.setString(1,pb.getName());
 	        ps.setString(2,pb.getAge());
-	        ps.setString(3,pb.getAddress());          
-	        ps.setString(4,pb.getGender());  
-	        ps.setString(5,pb.getContact());
+	        ps.setString(3,pb.getAnimalSpecies());          
+	        ps.setString(4,pb.getOwnerName());  
+	        ps.setString(5,pb.getOwnerContactNum());
 	        ps.setString(6,pb.getEmail());
 	        ps.setString(7,pb.getPassword());   
 	          
@@ -65,11 +65,11 @@ public class PatientDao {
 	                pb.setId(rs.getInt(1));  
 	                pb.setName(rs.getString(2));
 	                pb.setAge(rs.getString(3));
-	                pb.setAddress(rs.getString(4));
-	                pb.setGender(rs.getString(5));
-	                pb.setContact(rs.getString(6)); 
-	                pb.setEmail(rs.getString(7));
-			        pb.setPassword(rs.getString(8)); 
+	                pb.setAnimalSpecies(rs.getString(4));
+	                pb.setOwnerName(rs.getString(5));
+	                pb.setOwnerContactNum(rs.getString(6)); 
+			        pb.setPassword(rs.getString(7)); 
+			        pb.setEmail(rs.getString(8));
  					
 	                list.add(pb);  
 	            }  
@@ -84,12 +84,13 @@ public class PatientDao {
 	        int status=0;  
 	        try{  
 	            Connection con=ConnectionProvider.getConnection();  
-	            java.sql.PreparedStatement ups=con.prepareStatement("update patients set name=?,address=?,contact=?,password=? where email=?");  
+	            java.sql.PreparedStatement ups=con.prepareStatement("update patients set name=?,age=?,animalSpecies=?,OwnerName=?,OwnerContactNum=? where email=?");  
 	            ups.setString(1,up.getName()); 
-	            ups.setString(2,up.getAddress());
-	            ups.setString(3,up.getContact()); 
-	            ups.setString(4,up.getPassword()); 
-	            ups.setString(5,up.getEmail());
+	            ups.setString(2,up.getAge());
+	            ups.setString(3,up.getAnimalSpecies()); 
+	            ups.setString(4,up.getOwnerName()); 
+	            ups.setString(5,up.getOwnerContactNum());
+	            ups.setString(6,up.getEmail());
 	            
 	            status=ups.executeUpdate();  
 	              

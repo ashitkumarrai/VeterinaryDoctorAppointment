@@ -86,7 +86,6 @@
 			<a href="PatientHome.jsp"> <li class="roundbox">Book An Appointment</li></a>
 			<a href="PatientProfileUpdate.jsp"> <li class="roundbox">Update Profile</li></a>
 			<a href="PatientViewAppointment.jsp"><li class="roundbox">View Appointment</li></a>
-			<a href="Feedback.jsp"><li class="roundbox">Feedback</li></a>
 			<a href="Logout"><li class="roundbox">Logout</li></a>
  			<li class="welcome"><marquee> 
 		<%  
@@ -134,8 +133,8 @@
     	<option value="Gastroenterics">Gastroenterics</option>
     	<option value="Bariatric">Bariatric</option>
     	<option value="PlasticSurgery">Plastic Surgery</option>
-    	<option value="Rheumatology">Rheumatology</option></select></td></tr>
-		<tr><td>Description</td><td><textarea name="description" placeholder="Enter Your Health Status.." required="required"></textarea></td></tr>
+    	<option value="Rheumatology">Rheumatology</option><option value="Other">Other</option></select></td></tr>
+		<tr><td>Description</td><td><textarea name="description" placeholder="Enter pet Health Status.." required="required"></textarea></td></tr>
 		<tr><td>Doctor ID:</td><td><input type="number" name="docid" placeholder="xxx" required></td></tr>
 			
 		<tr><td><td><input type="submit" value="Submit"></td></tr>

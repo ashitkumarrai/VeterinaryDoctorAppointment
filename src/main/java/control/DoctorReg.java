@@ -21,6 +21,7 @@ public class DoctorReg extends HttpServlet {
         super();
     }
 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
@@ -86,7 +87,7 @@ public class DoctorReg extends HttpServlet {
 			  int status=DoctorDao.save(db);  
 		        if(status>0){  
 		            out.println("<center><h3>Record saved successfully!</h3></center> ");  
-		            request.getRequestDispatcher("AddDoctor.jsp").include(request, response);  
+		            request.getRequestDispatcher("AdminHome.jsp").include(request, response);  
 		        }else{  
 		        	out.println("<center><h3>Sorry! unable to save record </h3></center>");  
 		        }  

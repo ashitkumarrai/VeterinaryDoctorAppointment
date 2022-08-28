@@ -64,7 +64,7 @@
 			<a href="PatientHome.jsp"> <li class="roundbox">Book An Appointment</li></a>
 			<a href="PatientProfileUpdate.jsp"> <li class="roundbox">Update Profile</li></a>
 			<a href="PatientViewAppointment.jsp"><li class="roundbox">View Appointment</li></a>
-			<a href="Feedback.jsp"><li class="roundbox">Feedback</li></a>
+			
 			<a href="Logout"><li class="roundbox">Logout</li></a>
  			<li class="welcome"><marquee> 
   			<%

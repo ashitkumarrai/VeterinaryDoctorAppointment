@@ -34,7 +34,7 @@ mark {
 }
 .text-block {
 		position: absolute;
-    	bottom: 490px;
+    	bottom: 570px;
     	right:100px;
     	background-color: lightgreen;
     	color: white;

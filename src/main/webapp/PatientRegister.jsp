@@ -57,17 +57,13 @@
 	<div class="reg">
 	<table bgcolor="#f2f2f2" cellspacing="15px">
 		<tr><td></td></tr>
-		<tr><td>Full Name:</td><td><input  type="text" name="name" placeholder="Full Name" required="required"></td></tr>
+		<tr><td>Pet Name:</td><td><input  type="text" name="name" placeholder="Pet Name" required="required"></td></tr>
 		
-		<tr><td>D.O.B:</td><td><input type="date" name="dob" required="required"></td></tr>
+		<tr><td>Age:</td><td><input type="integer" name="age" required="required"></td></tr>
 		
-		<tr><td>Address:</td><td><textarea rows="4" cols="40" name="address" placeholder="Enter your full address ............" required="required"></textarea></td></tr>
+		<tr><td>Animal Species: </td><td><textarea rows="4" cols="40" name="animalSpecies" required="required"></textarea></td></tr>
 		
-		<tr><td>Gender:</td><td><input type="radio" name="gender" value="Male" required="required">Male
-		
-		<input type="radio" name="gender" value="Female" required="required">Female
-		
-		<input type="radio" name="gender" value="Other" required="required">Other</td></tr>
+		<tr><td>Owner Name:</td><td><input  type="text" name="ownerName" placeholder="Owner Name" required="required"></td></tr>
 		
 		<tr><td>Contact No:</td><td><input type="tel" name="contact"  pattern="^\d{10}$" placeholder="xxxxxxxxx"  required="required"></td></tr>
 		

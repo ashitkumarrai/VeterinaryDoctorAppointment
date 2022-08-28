@@ -45,7 +45,7 @@ public class PatientLog extends HttpServlet {
 		 response.setContentType("text/html");
 	        out.println("<html>");
 	        out.println("<head>");
-	        out.println("<title>AdminDocReg</title>");
+	        out.println("<title>PatientLogin</title>");
 	        out.println("</head>");
 	        out.print("<body>");
 	        String email=request.getParameter("email");  

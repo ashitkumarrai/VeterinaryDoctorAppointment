@@ -142,7 +142,7 @@
 			    	<option value="Gastroenterics">Gastroenterics</option>
 			    	<option value="Bariatric">Bariatric</option>
 			    	<option value="Plastic Surgery">Plastic Surgery</option>
-			    	<option value="Rheumatology">Rheumatology</option></select></td></tr>
+			    	<option value="Rheumatology">Rheumatology</option><option value="Other">Other</option></select></td></tr>
 					<tr>
 						<td>Contact No:</td>
 						<td><input type="tel" name="contact" placeholder="xxxxxxxxx"

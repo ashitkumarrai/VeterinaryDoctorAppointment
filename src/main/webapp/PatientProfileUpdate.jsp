@@ -63,16 +63,7 @@ option	{
       	font-family: cursive;
 }
 </style>
-<script>
-		function myFunction() {
-    	var x = document.getElementById("mypassword");
-    	if (x.type === "password") {
-        x.type = "text";
-    	} else {
-        x.type = "password";
-    }
-}
-</script>
+
 </head>
 <body bgcolor="#ADD8E6">
 	<jsp:include page="Header.jsp" />
@@ -83,7 +74,6 @@ option	{
 			<a href="PatientHome.jsp"> <li class="roundbox">Book An Appointment</li></a>
 			<a href="PatientProfileUpdate.jsp"> <li class="roundbox">Update Profile</li></a>
 			<a href="PatientViewAppointment.jsp"><li class="roundbox">View Appointment</li></a>
-			<a href="Feedback.jsp"><li class="roundbox">Feedback</li></a>
 			<a href="Logout"><li class="roundbox">Logout</li></a>
  			<li class="welcome"><marquee> 
 		<%  
@@ -121,13 +111,13 @@ option	{
 	<table>
 		<tr><td></td></tr>
 		<tr><td>Name</td><td><input  type="text" value="<%=prs.getString("name")%>" name="name" placeholder="Full Name" required="required"></td></tr>
-		<tr><td>D.O.B:</td><td><input readonly="readonly" value="<%=prs.getString("dob")%>" name="dob" required="required"></td></tr>
-		<tr><td>Address:</td><td><textarea rows="4" cols="40" name="address" placeholder="Enter your full address ............" required="required"><%=prs.getString("address")%></textarea></td></tr>
-		<tr><td>Gender:</td><td><input readonly="readonly" value="<%=prs.getString("gender")%>" required="required">
-		<tr><td>Contact No:</td><td><input type="tel" value="<%=prs.getString("contact")%>" pattern="^\d{10}$" name="contact" placeholder="xxxxxxxxx"  required="required"></td></tr>
-		<tr><td>Email Id:</td><td><input readonly="readonly" value="<%=prs.getString("email")%>" name="email" placeholder="xyz@gmail.com" ></td></tr>
-		<tr><td>Password :</td><td><input type="password" value="<%=prs.getString("password")%>" name="password" placeholder="****" required="required" id="mypassword"></td></tr>
-		<tr><td></td><td><input type="checkbox" onclick="myFunction()">Show Password</td></tr>
+		<tr><td>Age</td><td><input  type="text" value="<%=prs.getString("age")%>" name="age" placeholder="Pet Age.." required="required"></td></tr>
+		<tr><td>Animal Species:</td><td><textarea rows="4" cols="40" name="animalSpecies"  required="required"><%=prs.getString("animalSpecies")%></textarea></td></tr>
+		<tr><td>Owner Name:</td><td><input readonly="readonly" value="<%=prs.getString("ownerName")%>" name="ownerName" required="required">
+		<tr><td>Owner Email:</td><td><input readonly="readonly" value="<%=prs.getString("email")%>" name="email" required="required">
+		<tr><td>Owner Contact No:</td><td><input type="tel" value="<%=prs.getString("ownerContactNum")%>" pattern="^\d{10}$" name="ownerContactNum" placeholder="xxxxxxxxx"  required="required"></td></tr>
+
+		
 		
 		<tr><td><td><input type="submit" name="submit" value="Update"></tr>
 
