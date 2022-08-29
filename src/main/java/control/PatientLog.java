@@ -17,7 +17,7 @@ import daofiles.PatientDao;
 /**
  * Servlet implementation class PatientLog
  */
-@WebServlet("/PatientLog")
+@WebServlet("/PatientLogin")
 public class PatientLog extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -98,7 +98,7 @@ function myFunction() {
 		
 		<hr>
 		<div class="reg">
-			<form action="PatientLog" method="post">
+			<form action="PatientLogin" method="post">
 				<table>
 					<tr>
 						<td><b>Email</b></td>

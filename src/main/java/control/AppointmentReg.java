@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import daofiles.AppointmentDao;
 import beans.AppointmentBean;
 
-@WebServlet("/AppointmentReg")
+@WebServlet("/AppointmentRegistration")
 public class AppointmentReg extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

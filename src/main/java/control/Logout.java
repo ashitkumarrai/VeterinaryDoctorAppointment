@@ -19,7 +19,7 @@ public class Logout extends HttpServlet {
 		 response.setContentType("text/html");
 	        out.println("<html>");
 	        out.println("<head>");
-	        out.println("<title>AdminLogout</title>");
+	        out.println("<title>Logout</title>");
 	        out.println("</head>");
 	        out.print("<body>");
        		        

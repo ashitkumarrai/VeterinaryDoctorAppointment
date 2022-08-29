@@ -56,6 +56,14 @@
        	border-radius:30px;
       	cursor: pointer;
        }
+          #hello{
+     
+	     	
+	     
+	     	color: green;
+	     	font-size: 20px;
+       }
+       	 
 </style>
 </head>
 <body bgcolor="#ADD8E6">
@@ -68,7 +76,7 @@
 			<a href="DoctorProfileUpdate.jsp"> <li class="roundbox">Update Profile</li></a>
 			
 			<a href="Logout"><li class="roundbox">Logout</li></a>
- 			<li class="welcome"><marquee> 
+ 			<li class="welcome" id="hello"><marquee> 
 		<%  
          response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); //HTTP 1.1
          response.setHeader("Pragma", "no-cache");	  //HTTP 1.0    
@@ -79,7 +87,7 @@
  					}
  			       else if(session!=null)	{
  					String email=(String) session.getAttribute("email");
- 					out.println("Hello,"+email);
+ 					out.println("Hello, "+email);
  					}
 				
 		

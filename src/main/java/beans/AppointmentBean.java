@@ -3,7 +3,7 @@ package beans;
 public class AppointmentBean {
 	private int id;
 	private int age;
-	private int apid;
+
 	private String name;
 	private String contact;
 	private String specialty;
@@ -17,12 +17,8 @@ public class AppointmentBean {
 	public void setDocId(int docId) {
 		this.docId = docId;
 	}
-	public int getApid() {
-		return apid;
-	}
-	public void setApid(int apid) {
-		this.apid = apid;
-	}
+
+
 	public int getId() {
 		return id;
 	}

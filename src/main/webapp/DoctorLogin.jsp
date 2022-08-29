@@ -98,7 +98,7 @@ function altr() {
 		<hr>
 	
 			<div class="reg">
-			<form action="DoctorLog" method="post">
+			<form action="DoctorLogin" method="post">
 				<table>
 					<tr>
 						<td><b>Email</b></td>

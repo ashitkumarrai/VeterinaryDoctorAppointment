@@ -87,7 +87,7 @@ button:hover {
 		<h1>Admin Login</h1>
 		<hr>
 		<br>
-		<form action="AdminLog" method="post">
+		<form action="AdminLogin" method="post">
 			<div class="reg">
 				<table>
 					<tr>

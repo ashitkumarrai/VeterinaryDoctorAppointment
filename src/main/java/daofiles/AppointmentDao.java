@@ -42,7 +42,7 @@ public class AppointmentDao {
 	 		ResultSet rs=ps.executeQuery();
 	 		while (rs.next()) {
 	 			AppointmentBean app=new AppointmentBean();
-	 				app.setApid(rs.getInt(1));
+	 				app.setId(rs.getInt(1));
 	 			  	app.setName(rs.getString(2));  
 	                app.setEmail(rs.getString(3));  
 	                app.setContact(rs.getString(4));
@@ -68,12 +68,12 @@ public class AppointmentDao {
 	 	ArrayList<AppointmentBean> list=new ArrayList<>();
 	 	try {
 	 		Connection con=ConnectionProvider.getConnection();
-	 		java.sql.PreparedStatement ps=con.prepareStatement("select * from appointment where id=? order by day");
+	 		java.sql.PreparedStatement ps=con.prepareStatement("select * from appointment where docId=? order by day desc");
 	 		ps.setInt(1,id);
 	 		ResultSet rs=ps.executeQuery();
 	 		while (rs.next()) {
 	 			AppointmentBean app=new AppointmentBean();
-	 				app.setApid(rs.getInt(1));
+	 				app.setId(rs.getInt(1));
 	 			  	app.setName(rs.getString(2));  
 	                app.setEmail(rs.getString(3));  
 	                app.setContact(rs.getString(4));
@@ -90,12 +90,12 @@ public class AppointmentDao {
 	 	}
 	 	return list;
 	 }
-	  public static int cancel(int apid){  
+	  public static int cancel(int id){  
 	        int status=0;  
 	        try{  
 	            Connection con=ConnectionProvider.getConnection();  
-	            java.sql.PreparedStatement ps=con.prepareStatement("delete from appointment where apid=?");  
-	            ps.setInt(1,apid);  
+	            java.sql.PreparedStatement ps=con.prepareStatement("delete from appointment where id=?");  
+	            ps.setInt(1,id);  
 	            status=ps.executeUpdate();  
 	              
 	            con.close();  

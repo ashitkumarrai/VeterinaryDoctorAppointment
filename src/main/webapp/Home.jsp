@@ -73,7 +73,7 @@
 		<a href="Contact.jsp">Contact</a> <a href="About.jsp">About</a>
 	</div>
 	
-<marquee style="font-size: 24px;" onmouseover="this.stop();" onmouseout="this.start();"><blink> &#9733</blink>  Need an appointment ?  <a href="PatientRegister.jsp" style="color: black;"> Get Registered</a>
+<marquee style="font-size: 24px; color: red;" onmouseover="this.stop();" onmouseout="this.start();"><blink> &#9733</blink>  Need an appointment ?  <a href="PatientRegister.jsp" style="color: black;"> Get Registered</a>
 	</marquee>
 
 	

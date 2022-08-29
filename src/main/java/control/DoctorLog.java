@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 import daofiles.DoctorDao;
 
-@WebServlet("/DoctorLog")
+@WebServlet("/DoctorLogin")
 public class DoctorLog extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     

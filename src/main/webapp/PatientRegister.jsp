@@ -37,7 +37,7 @@
 <body bgcolor="#ADD8E6">
 	<jsp:include page="Header.jsp" />  
 	<div class="topnav" class="containerh">
-		<a href="Home.jsp">Home</a> <a href="Specialization.jsp">Specialization</a>
+		<a href="Home.jsp">Home</a> 
 		<a href="Contact.jsp">Contact</a> <a href="About.jsp">About</a>
 	</div>		
 			

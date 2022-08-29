@@ -108,7 +108,7 @@
 		<center>	
 		<h1>Book An Appointment</h1>
 		<div class="reg">
-		<form action="AppointmentReg" method="get">
+		<form action="AppointmentRegistration" method="get">
 		<table>
 		<tr><td></td></tr>
 		<tr><td>Name:</td><td><input type="text" name="name" placeholder="Name" required></td></tr>

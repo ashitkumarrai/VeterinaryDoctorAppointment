@@ -12,7 +12,7 @@ import daofiles.DoctorDao;
 /**
  * Servlet implementation class DeleteDoctor
  */
-@WebServlet("/DeleteDoctor")
+@WebServlet("/DeleteDoc")
 public class DeleteDoctor extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

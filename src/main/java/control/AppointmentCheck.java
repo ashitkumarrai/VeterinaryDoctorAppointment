@@ -44,7 +44,9 @@ public class AppointmentCheck extends HttpServlet {
  					}
  			       else if(session!=null)	{
  					String email=(String) session.getAttribute("email");
- 					out.println("Hello ,  "+email);
+ 					
+ 					out.println("<h4 style ='color:blue'> Hello ,   "+email+"</h4>");
+ 					
  					}
 		
 		  
@@ -64,7 +66,7 @@ public class AppointmentCheck extends HttpServlet {
 		       out.print("<td>"+apps.getContact()+"</td><td>"+apps.getAge()+"</td>");
 		       out.print("<td>"+apps.getDay()+"</td><td>"+apps.getSpecialty() +"</td>");
 		       out.print("<td>"+apps.getDescription()+"</td>");
-		       out.print("<td><a href='CancelAppointment?id="+apps.getApid()+"'>Cancel</a></td></tr>");}
+		       out.print("<td><a href='CancelAppoint?id="+apps.getId()+"'>Cancel</a></td></tr>");}
 	       }
 	       else	{
 	    	   out.print("<h3> Please Enter your Correct Id </h3>");
