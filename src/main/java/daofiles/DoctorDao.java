@@ -95,7 +95,7 @@ public class DoctorDao {
 	        return dbe;  
 	    }  
 	    public static List<DocBean> getAllDoctors(){  
-	        List<DocBean> list=new ArrayList<DocBean>();  
+	        List<DocBean> list=new ArrayList<>();  
 	          
 	        try{  
 	            Connection con=ConnectionProvider.getConnection();  

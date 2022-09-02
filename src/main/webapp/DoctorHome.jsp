@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@page import="daofiles.DoctorDao,daofiles.AppointmentDao,beans.*"%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="EN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Doctor Home</title>
@@ -63,10 +63,13 @@
 	     	color: green;
 	     	font-size: 20px;
        }
+        body {
+  background-color : #ADD8E6;
+}
        	 
 </style>
 </head>
-<body bgcolor="#ADD8E6">
+<body>
 	<jsp:include page="Header.jsp" />
 	<br>
 	<div class="container">

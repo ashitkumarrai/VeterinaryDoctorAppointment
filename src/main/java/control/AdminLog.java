@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/AdminLogin")
-public class AdminLog extends HttpServlet {
+public class AdminLog extends HttpServlet  {
 	private static final long serialVersionUID = 1L;
        
     public AdminLog() {
         super();
     }
- 
+       @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 				
 		PrintWriter out=response.getWriter();

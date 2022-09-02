@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="EN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>View Appointment</title>
@@ -63,7 +63,7 @@
 
 </head>
 <body bgcolor="#ADD8E6">
-		<%@page import="daofiles.*,beans.*,java.util.ArrayList" %>
+		<%@page import="daofiles.*,beans.*,java.util.List" %>
 		<jsp:include page="Header.jsp" />
 	<br>
 	<div class="container">
@@ -93,7 +93,7 @@
 	</ul>		
 			<% 
 				String email=(String)session.getAttribute("email");
-			ArrayList<AppointmentBean> list=AppointmentDao.getAppointmentbyemail(email);
+			List<AppointmentBean> list=AppointmentDao.getAppointmentbyemail(email);
 				
 			%>
 		<center>

@@ -19,6 +19,7 @@ public class AppointmentReg extends HttpServlet {
    public AppointmentReg() {
         super();
       }
+   @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			PrintWriter out=response.getWriter();
 		response.setContentType("text/html");

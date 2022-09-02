@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 import daofiles.DoctorDao;
 
 @WebServlet("/DoctorLogin")
@@ -21,6 +20,7 @@ public class DoctorLog extends HttpServlet {
     public DoctorLog() {
         super();
   }
+    @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		 response.setContentType("text/html");

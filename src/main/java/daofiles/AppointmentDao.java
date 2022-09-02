@@ -3,6 +3,7 @@ package daofiles;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
 import beans.AppointmentBean;
 import dba.ConnectionProvider;
@@ -32,7 +33,7 @@ public class AppointmentDao {
 	          
 	        return status;  
 	    }  
-	 public static ArrayList<AppointmentBean> getAppointmentbyemail(String email)
+	 public static List<AppointmentBean> getAppointmentbyemail(String email)
 	 {
 	 	ArrayList<AppointmentBean> list=new ArrayList<>();
 	 	try {
@@ -63,7 +64,7 @@ public class AppointmentDao {
 
 	
 	 
-	 public static ArrayList<AppointmentBean> getAppointById(int id)
+	 public static List<AppointmentBean> getAppointById(int id)
 	 {
 	 	ArrayList<AppointmentBean> list=new ArrayList<>();
 	 	try {

@@ -13,13 +13,12 @@ import daofiles.AppointmentDao;
 @WebServlet("/CancelAppoint")
 public class CancelAppointment extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	 @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int apid=Integer.parseInt(request.getParameter("id"));
 		AppointmentDao.cancel(apid);
 		RequestDispatcher rd=request.getRequestDispatcher("DoctorHome.jsp");
 		rd.forward(request, response);
 	}	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	}
-
+	 
 }

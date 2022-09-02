@@ -3,6 +3,7 @@ package control;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,7 +26,7 @@ public class AppointmentCheck extends HttpServlet {
     public AppointmentCheck() {
         super();
             }
-
+    @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		   out.println("<html>");
@@ -59,8 +60,8 @@ public class AppointmentCheck extends HttpServlet {
 	       out.print("<th style='background-color:#2874A6'>Description</th>		<th style='background-color:#2874A6'>Cancel</th></tr>");
 	       
 	       DocBean dbe = DoctorDao.getDoctor(id,email);
-	       if(id==dbe.getId()||email==dbe.getEmail())	{
-	       ArrayList<AppointmentBean> list=AppointmentDao.getAppointById(id);
+	       if(id==dbe.getId()||email.equals(dbe.getEmail()))	{
+	       List<AppointmentBean> list= AppointmentDao.getAppointById(id);
 	       for (AppointmentBean apps : list) {
 	    	   out.print("<tr style='background-color:white'><td>"+apps.getName()+"</td><td>"+apps.getEmail()+"</td>");
 		       out.print("<td>"+apps.getContact()+"</td><td>"+apps.getAge()+"</td>");
@@ -80,7 +81,7 @@ public class AppointmentCheck extends HttpServlet {
 	   	
 	   	   
 	}
-
+       @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	}
